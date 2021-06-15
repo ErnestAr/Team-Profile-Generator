@@ -1,46 +1,4 @@
-const fs = require('fs')
-const inquirer = require('inquirer')
-const classes = require("./lib/classes.js")
-
-
-
-function init() {
-    inquirer
-  .prompt([
-    {
-        type: 'input',
-        message:  "What's  the email",
-        name: 'email',
-    },
-    {
-    type: 'input',
-    message: "whats the id",
-    name: 'id',
-    },
-    {
-    type: 'input',
-    message: "what is name",
-    name: 'instructions',
-    },
-    {
-    type: 'list',
-    name: 'class',
-    message: "class?",
-    choices: ['Enginee', 'son', 'e4', 'schoolar'],
-    },
-  ])
-  .then((data) =>
-  {
-    fs.writeFile('./dist/index1.html', erate(data), (err) =>
-    err ? console.error(err) : console.log('Success!')
-   );
-  }
-  );
-}
-
-const erate = (data) => {
-htmlFile =
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -59,7 +17,7 @@ htmlFile =
             <h3>Jared <br>Engineer
             </h3>
             <p>ID: </p>
-            <p>Email: <a href="http://">${data.email}</a></p>
+            <p>Email: <a href="http://">brahhh</a></p>
             <p>Office number:</p>
         </div>
         <div class=" col-2 card">
@@ -72,13 +30,3 @@ htmlFile =
     </main>
 </body>
 </html>
-`
-
-return htmlFile
-}
-
-
-
-
-
-init()
