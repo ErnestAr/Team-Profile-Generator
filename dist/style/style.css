@@ -1,20 +1,38 @@
 
 .header {
-    height: 200px;
-    margin-bottom: 20px;
     background-color:blueviolet;
+    height: fit-content;
 }
 
 .card {
     height: fit-content;
     margin: 0px 10px 20px 10px;
     width: 200px;
+    padding: 0px;
+    border: solid rgba(0, 0, 0, 0.466) 1px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.377);
 }
 
 h3 {
     margin: 0px;
-    padding: 10px 5px 5px 10px;
+    height: 70px;
+    padding: 5px;
     background-color: aquamarine;
     width: 100%;
 }
 
+h1 {
+    font-size: 80px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 30px;
+    height: 200px;
+    margin-bottom: 20px;
+
+    color: aliceblue;
+}
+
+p {
+    padding: 5px;
+    font-size: 20px;
+}

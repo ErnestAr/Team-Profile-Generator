@@ -43,13 +43,13 @@ const inputManager = () => {
         data.officeNumber
       );
       let divEl = `
-        \t<div class=" col-2 card">
+        <div class=" col-2 card">
                 <h3> ${newEmp.getName()}<br> ${newEmp.getRole()}
                 </h3>
                 <p>ID: ${newEmp.getId()}</p>
-                <p>Email: <a href="http://">${newEmp.getEmail()}</a></p>
+                <p>Email: <a href="mailto:${newEmp.getEmail()}">${newEmp.getEmail()}</a></p>
                 <p>Office number: ${newEmp.getOfficeNumber()}</p>
-        \t</div>
+        </div>
       `;
       dataStore.push(divEl);
       switch (data.class) {
@@ -112,13 +112,13 @@ const inputEng = () => {
         data.github
       );
       let divEl = `
-        \t<div class=" col-2 card">
+        <div class=" col-2 card">
                 <h3> ${newEmp.getName()}<br> ${newEmp.getRole()}
                 </h3>
                 <p>ID: ${newEmp.getId()}</p>
-                <p>Email: <a href="http://">${newEmp.getEmail()}</a></p>
-                <p>Git: <a href="http://">${newEmp.getGitHub()}</a></p>
-        \t</div>
+                <p>Email: <a href="mailto:${newEmp.getEmail()}">${newEmp.getEmail()}</a></p>
+                <p>Git: <a href="https://github.com/${newEmp.getGitHub()}">${newEmp.getGitHub()}</a></p>
+        </div>
       `;
       dataStore.push(divEl);
       switch (data.class) {
@@ -180,13 +180,13 @@ const inputInt = () => {
         data.school
       );
       let divEl = `
-        \t<div class=" col-2 card">
+        <div class=" col-2 card">
                 <h3> ${newEmp.getName()}<br> ${newEmp.getRole()}
                 </h3>
                 <p>ID: ${newEmp.getId()}</p>
-                <p>Email: <a href="http://">${newEmp.getEmail()}</a></p>
+                <p>Email: <a href="mailto:${newEmp.getEmail()}">${newEmp.getEmail()}</a></p>
                 <p>School: ${newEmp.getSchool()}</p>
-        \t</div>
+        </div>
       `;
       dataStore.push(divEl);
       switch (data.class) {
@@ -223,7 +223,7 @@ const erate = () => {
     </head>
     <body>
         <header class="header">
-
+            <h1>Team Manager</h1>
         </header>
         <main class="row justify-content-center">   
                 ${dataStore.join("")}
