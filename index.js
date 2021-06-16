@@ -42,16 +42,15 @@ const inputManager = () => {
         data.email,
         data.officeNumber
       );
-      let divEl = 
-      `
+      let divEl = `
         \t<div class=" col-2 card">
                 <h3> ${newEmp.getName()}<br> ${newEmp.getRole()}
                 </h3>
                 <p>ID: ${newEmp.getId()}</p>
                 <p>Email: <a href="http://">${newEmp.getEmail()}</a></p>
-                <p>Office number: ${newEmp.getoOfficeNumber()}</p>
+                <p>Office number: ${newEmp.getOfficeNumber()}</p>
         \t</div>
-      `
+      `;
       dataStore.push(divEl);
       switch (data.class) {
         case "Engineer":
@@ -62,7 +61,7 @@ const inputManager = () => {
           break;
         case "Quit":
           console.log(dataStore);
-          fs.writeFile("./dist/index1.html", erate(data), (err) =>
+          fs.writeFile("./dist/index.html", erate(data), (err) =>
             err ? console.error(err) : console.log("Success!")
           );
           dataStore.push(divEl);
@@ -112,8 +111,7 @@ const inputEng = () => {
         data.email,
         data.github
       );
-      let divEl = 
-      `
+      let divEl = `
         \t<div class=" col-2 card">
                 <h3> ${newEmp.getName()}<br> ${newEmp.getRole()}
                 </h3>
@@ -121,7 +119,7 @@ const inputEng = () => {
                 <p>Email: <a href="http://">${newEmp.getEmail()}</a></p>
                 <p>Git: <a href="http://">${newEmp.getGitHub()}</a></p>
         \t</div>
-      `
+      `;
       dataStore.push(divEl);
       switch (data.class) {
         case "Engineer":
@@ -132,7 +130,7 @@ const inputEng = () => {
           break;
         case "Quit":
           console.log(dataStore);
-          fs.writeFile("./dist/index1.html", erate(data), (err) =>
+          fs.writeFile("./dist/index.html", erate(data), (err) =>
             err ? console.error(err) : console.log("Success!")
           );
           dataStore.push(divEl);
@@ -181,8 +179,7 @@ const inputInt = () => {
         data.email,
         data.school
       );
-      let divEl = 
-      `
+      let divEl = `
         \t<div class=" col-2 card">
                 <h3> ${newEmp.getName()}<br> ${newEmp.getRole()}
                 </h3>
@@ -190,7 +187,7 @@ const inputInt = () => {
                 <p>Email: <a href="http://">${newEmp.getEmail()}</a></p>
                 <p>School: ${newEmp.getSchool()}</p>
         \t</div>
-      `
+      `;
       dataStore.push(divEl);
       switch (data.class) {
         case "Engineer":
@@ -201,7 +198,7 @@ const inputInt = () => {
           break;
         case "Quit":
           console.log(dataStore);
-          fs.writeFile("./dist/index1.html", erate(), (err) =>
+          fs.writeFile("./dist/index.html", erate(), (err) =>
             err ? console.error(err) : console.log("Success!")
           );
           dataStore.push(divEl);
@@ -211,7 +208,6 @@ const inputInt = () => {
       }
     });
 };
-
 
 // Create html
 const erate = () => {
@@ -239,5 +235,3 @@ const erate = () => {
 };
 
 inputManager();
-
-
