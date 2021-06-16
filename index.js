@@ -5,6 +5,7 @@ let dataStore = [];
 
 //Create manager
 const inputManager = () => {
+  console.log("Please enter manager info below.");
   inquirer
     .prompt([
       {
@@ -60,7 +61,6 @@ const inputManager = () => {
           inputInt();
           break;
         case "Quit":
-          console.log(dataStore);
           fs.writeFile("./dist/index.html", erate(data), (err) =>
             err ? console.error(err) : console.log("Success!")
           );
@@ -74,6 +74,7 @@ const inputManager = () => {
 
 //Create engineer
 const inputEng = () => {
+  console.log("Enter Engineer info below.");
   inquirer
     .prompt([
       {
@@ -129,7 +130,6 @@ const inputEng = () => {
           inputInt();
           break;
         case "Quit":
-          console.log(dataStore);
           fs.writeFile("./dist/index.html", erate(data), (err) =>
             err ? console.error(err) : console.log("Success!")
           );
@@ -143,6 +143,7 @@ const inputEng = () => {
 
 //Create Intern
 const inputInt = () => {
+  console.log("Enter Intern info below.");
   inquirer
     .prompt([
       {
@@ -197,7 +198,6 @@ const inputInt = () => {
           inputInt();
           break;
         case "Quit":
-          console.log(dataStore);
           fs.writeFile("./dist/index.html", erate(), (err) =>
             err ? console.error(err) : console.log("Success!")
           );
