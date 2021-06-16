@@ -223,7 +223,7 @@ const erate = () => {
     </head>
     <body>
         <header class="header">
-            <h1>Team Manager</h1>
+            <h1>Team</h1>
         </header>
         <main class="row justify-content-center">   
                 ${dataStore.join("")}
