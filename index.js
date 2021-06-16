@@ -9,22 +9,22 @@ const inputManager = () => {
     .prompt([
       {
         type: "input",
-        message: "what is name",
+        message: "Enter name: ",
         name: "name",
       },
       {
         type: "input",
-        message: "What's  the email",
+        message: "Enter email: ",
         name: "email",
       },
       {
         type: "input",
-        message: "whats the id",
+        message: "Enter id: ",
         name: "id",
       },
       {
         type: "input",
-        message: "whats the officeNumber",
+        message: "Enter officeNumber:",
         name: "officeNumber",
       },
 
@@ -78,22 +78,22 @@ const inputEng = () => {
     .prompt([
       {
         type: "input",
-        message: "what is name",
+        message: "Enter name: ",
         name: "name",
       },
       {
         type: "input",
-        message: "What's  the email",
+        message: "Enter email",
         name: "email",
       },
       {
         type: "input",
-        message: "whats the id",
+        message: "Enter id",
         name: "id",
       },
       {
         type: "input",
-        message: "whats the git",
+        message: "Enter GitHub account: ",
         name: "github",
       },
 
@@ -147,22 +147,22 @@ const inputInt = () => {
     .prompt([
       {
         type: "input",
-        message: "what is name",
+        message: "Enter name: ",
         name: "name",
       },
       {
         type: "input",
-        message: "What's  the email",
+        message: "Enter email: ",
         name: "email",
       },
       {
         type: "input",
-        message: "whats the id",
+        message: "Enter id: ",
         name: "id",
       },
       {
         type: "input",
-        message: "whats the school",
+        message: "Enter attended school: ",
         name: "school",
       },
       {
